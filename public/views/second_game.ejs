@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Game</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="../js/second_game.js"></script>
+</head>
+<body>
+	<%- include header.ejs %>
+	<div class='content'>
+		<div id="level" style="display: none;"><%= body.level %></div>
+		<select id='select_color'>
+			<option value='red'>Red</option>
+			<option value='green'>Green</option>
+			<option value='blue'>Blue</option>
+		</select>
+		<div id='color' style='height: 100px; width: 100px;'></div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
